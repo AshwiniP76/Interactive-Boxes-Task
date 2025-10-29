@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Boxes — Video Style</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Interactive Boxes — Video Style</h1>
+    <p class="subtitle">Click a box to expand. Only one box opens at a time (video-like behavior). Mobile friendly.</p>
+  </header>
+
+  <main class="stage">
+    <section class="box-wrap" role="list">
+      <article class="box" id="box1" tabindex="0" aria-expanded="false" aria-controls="panel1" role="listitem">
+        <div class="box-inner">
+          <div class="box-header">
+            <strong class="title">Top Box</strong>
+            <button class="chev" aria-hidden="true">▾</button>
+          </div>
+
+          <div class="panel" id="panel1" role="region" aria-hidden="true">
+            <div class="preview" aria-live="polite">Preview Area</div>
+
+            <div class="controls">
+              <div class="control-group">
+                <label>Colors</label>
+                <div class="colors">
+                  <button class="color" data-color="#4d79ff" style="background:#4d79ff" aria-label="blue"></button>
+                  <button class="color" data-color="#ff6b6b" style="background:#ff6b6b" aria-label="red"></button>
+                  <button class="color" data-color="#2ecc71" style="background:#2ecc71" aria-label="green"></button>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label>Sizes</label>
+                <div class="sizes">
+                  <button data-size="small" aria-pressed="false">S</button>
+                  <button data-size="medium" class="active" aria-pressed="true">M</button>
+                  <button data-size="large" aria-pressed="false">L</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+      <article class="box" id="box2" tabindex="0" aria-expanded="false" aria-controls="panel2" role="listitem">
+        <div class="box-inner">
+          <div class="box-header">
+            <strong class="title">Middle Box</strong>
+            <button class="chev" aria-hidden="true">▾</button>
+          </div>
+
+          <div class="panel" id="panel2" role="region" aria-hidden="true">
+            <div class="preview" aria-live="polite">Preview Area</div>
+
+            <div class="controls">
+              <div class="control-group">
+                <label>Colors</label>
+                <div class="colors">
+                  <button class="color" data-color="#f1c40f" style="background:#f1c40f" aria-label="yellow"></button>
+                  <button class="color" data-color="#9b59b6" style="background:#9b59b6" aria-label="purple"></button>
+                  <button class="color" data-color="#1abc9c" style="background:#1abc9c" aria-label="cyan"></button>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label>Sizes</label>
+                <div class="sizes">
+                  <button data-size="small" aria-pressed="false">S</button>
+                  <button data-size="medium" class="active" aria-pressed="true">M</button>
+                  <button data-size="large" aria-pressed="false">L</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+      <article class="box" id="box3" tabindex="0" aria-expanded="false" aria-controls="panel3" role="listitem">
+        <div class="box-inner">
+          <div class="box-header">
+            <strong class="title">Bottom Box</strong>
+            <button class="chev" aria-hidden="true">▾</button>
+          </div>
+
+          <div class="panel" id="panel3" role="region" aria-hidden="true">
+            <div class="preview" aria-live="polite">Preview Area</div>
+
+            <div class="controls">
+              <div class="control-group">
+                <label>Colors</label>
+                <div class="colors">
+                  <button class="color" data-color="#e67e22" style="background:#e67e22" aria-label="orange"></button>
+                  <button class="color" data-color="#e84393" style="background:#e84393" aria-label="pink"></button>
+                  <button class="color" data-color="#95a5a6" style="background:#95a5a6" aria-label="gray"></button>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label>Sizes</label>
+                <div class="sizes">
+                  <button data-size="small" aria-pressed="false">S</button>
+                  <button data-size="medium" class="active" aria-pressed="true">M</button>
+                  <button data-size="large" aria-pressed="false">L</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="foot">Designed for Proveway Screening • by [Your Name]</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
